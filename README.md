@@ -8,12 +8,8 @@ npm install
 node scripts/generate-fixtures.mjs   # generates 14,000 files in content/items/
 
 ## Reproduce the bug
-
-# This will OOM:
-npm run build
-
-# This succeeds:
-NODE_OPTIONS=--max-old-space-size=8192 npm run build
+npm run build # This will OOM:
+NODE_OPTIONS=--max-old-space-size=8192 npm run build # This succeeds
 
 
 ## Environment
