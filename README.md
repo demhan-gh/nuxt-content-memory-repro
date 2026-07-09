@@ -5,20 +5,19 @@ totalling ~70MB of raw content. Build output is ~44MB. This is a ~100× ratio.
 
 ## Setup
 
-\`\`\`bash
+bash
 npm install
 node scripts/generate-fixtures.mjs   # generates 14,000 files in content/items/
-\`\`\`
 
 ## Reproduce the bug
 
-\`\`\`bash
+bash
 # This will OOM:
 npm run build
 
 # This succeeds:
 NODE_OPTIONS=--max-old-space-size=8192 npm run build
-\`\`\`
+
 
 ## Environment
 │ │                                                              │
