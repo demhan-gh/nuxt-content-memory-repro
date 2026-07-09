@@ -1,7 +1,8 @@
 # Nuxt Content Memory Reproduction
 
 `nuxt build` requires ~8GB heap for a 14,000-file `type: 'data'` JSON collection
-totalling ~70MB of raw content. Build output is ~44MB. This is a ~100× ratio.
+totalling ~70MB of raw content. Build output is ~44MB. This is a ~100× ratio. Build
+succeeds for 10500 files
 
 ## Setup
 npm install
